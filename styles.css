@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+section {
+    padding: 1em;
+    margin: 1em 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5em;
+}
+
+article, figure {
+    margin-bottom: 1em;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
