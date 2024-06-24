@@ -1,69 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="schema: http://schema.org/">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Collection: Wine Production in Italy in Late Antiquity</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body vocab="http://schema.org/" typeof="schema:Collection">
     <header>
-        <h1>Wine Production in Italy in Late Antiquity</h1>
+        <h1 property="schema:name">Wine Production in Italy in Late Antiquity</h1>
     </header>
     
     <section id="texts">
         <h2>Texts</h2>
-        <article>
-            <h3>Overview</h3>
-            <p>Wine production was one of the most important agricultural processes in Roman Italy. In Late Antiquity (300-600 CE), the process of wine production included harvesting grapes, initial crushing by treading, subsequent pressing of the pulp, and finally transferring the grape juice to the storage area for fermentation.</p>
+        <article typeof="schema:Article">
+            <h3 property="schema:headline">Overview</h3>
+            <p property="schema:articleBody">Wine production was one of the most important agricultural processes in Roman Italy. In Late Antiquity (300-600 CE), the process of wine production included harvesting grapes, initial crushing by treading, subsequent pressing of the pulp, and finally transferring the grape juice to the storage area for fermentation.</p>
         </article>
-        <article>
-            <h3>Archaeological Findings</h3>
-            <p>At the "Augustus Villa" in Somma Vesuviana, three vats used for wine production were found. In San Giusto, Apulia, two wineries with screw presses were discovered. These archaeological findings confirm the continuation of large-scale wine production in Late Antiquity.</p>
+        <article typeof="schema:Article">
+            <h3 property="schema:headline">Archaeological Findings</h3>
+            <p property="schema:articleBody">At the "Augustus Villa" in Somma Vesuviana, three vats used for wine production were found. In San Giusto, Apulia, two wineries with screw presses were discovered. These archaeological findings confirm the continuation of large-scale wine production in Late Antiquity.</p>
         </article>
     </section>
     
     <section id="images">
         <h2>Images</h2>
-        <figure>
-            <img src="images/constantia_sarcophagus.jpg" alt="Constantia's Sarcophagus">
-            <figcaption>Constantia's Sarcophagus depicting grape treading.</figcaption>
+        <figure typeof="schema:ImageObject">
+            <img src="images/constantia_sarcophagus.jpg" alt="Constantia's Sarcophagus" property="schema:contentUrl">
+            <figcaption property="schema:description">Constantia's Sarcophagus depicting grape treading. Workers are shown stomping grapes on a raised floor, with juice flowing directly into sunken dolia without any indication of a press or intermediate vat. This depiction is significant as it resonates with Christian spiritual doctrine by symbolizing the transformation of the "first fruit" into wine.</figcaption>
         </figure>
-        <figure>
-            <img src="images/piazza_armerina_mosaic.jpg" alt="Piazza Armerina Mosaic">
-            <figcaption>Piazza Armerina Mosaic showing stages of wine production.</figcaption>
+        <figure typeof="schema:ImageObject">
+            <img src="images/piazza_armerina_mosaic.jpg" alt="Piazza Armerina Mosaic" property="schema:contentUrl">
+            <figcaption property="schema:description">Piazza Armerina Mosaic showing stages of wine production. The mosaic depicts a worker bringing baskets of grapes to the press room, three workers treading the grapes, and a press beam equipped with two vertical logs as support and round planks for pressing a pulp. This imagery is essential for understanding the wine production techniques of the time.</figcaption>
         </figure>
-        <figure>
-            <img src="images/san_giusto_winery.jpg" alt="San Giusto Winery">
-            <figcaption>San Giusto Winery with screw presses.</figcaption>
+        <figure typeof="schema:ImageObject">
+            <img src="images/san_giusto_winery.jpg" alt="San Giusto Winery" property="schema:contentUrl">
+            <figcaption property="schema:description">San Giusto Winery with screw presses. This unique winery, dated to the fourth century, contained two wine presses mounted on circular, tile-flagged platforms. Pipes under the press platform diverted the liquid from it to a large collecting tank located in an adjacent wine cellar, indicating advanced wine production technology of the period.</figcaption>
         </figure>
     </section>
     
     <section id="audio">
         <h2>Audio</h2>
-        <audio controls>
-            <source src="audio/wine_production_overview.mp3" type="audio/mpeg">
+        <audio controls typeof="schema:AudioObject">
+            <source src="audio/wine_production_overview.mp3" type="audio/mpeg" property="schema:contentUrl">
             Your browser does not support the audio element.
         </audio>
-        <p>Overview of the wine production process in Italy in Late Antiquity.</p>
+        <p property="schema:description">Overview of the wine production process in Italy in Late Antiquity.</p>
         
-        <audio controls>
-            <source src="audio/historical_sources.mp3" type="audio/mpeg">
+        <audio controls typeof="schema:AudioObject">
+            <source src="audio/historical_sources.mp3" type="audio/mpeg" property="schema:contentUrl">
             Your browser does not support the audio element.
         </audio>
-        <p>Historical sources on wine production.</p>
+        <p property="schema:description">Historical sources on wine production.</p>
         
-        <audio controls>
-            <source src="audio/archaeological_findings.mp3" type="audio/mpeg">
+        <audio controls typeof="schema:AudioObject">
+            <source src="audio/archaeological_findings.mp3" type="audio/mpeg" property="schema:contentUrl">
             Your browser does not support the audio element.
         </audio>
-        <p>Archaeological findings related to wine production.</p>
+        <p property="schema:description">Archaeological findings related to wine production.</p>
         
-        <audio controls>
-            <source src="audio/art_and_symbolism.mp3" type="audio/mpeg">
+        <audio controls typeof="schema:AudioObject">
+            <source src="audio/art_and_symbolism.mp3" type="audio/mpeg" property="schema:contentUrl">
             Your browser does not support the audio element.
         </audio>
-        <p>Artistic depictions and symbolism of wine production.</p>
+        <p property="schema:description">Artistic depictions and symbolism of wine production.</p>
+    </section>
+
+    <section id="bibliography">
+        <h2>Bibliography</h2>
+        <ul>
+            <li typeof="schema:ScholarlyArticle"><span property="schema:name">Burton P., Lewit T. Pliny’s Presses: The True Story of the First Century Wine Press. Klio 101, 2019.</span></li>
+            <li typeof="schema:ScholarlyArticle"><span property="schema:name">Dodd E. The Archaeology of Wine Production in Roman and Pre-Roman Italy. American Journal of Archaeology 126 (3), 2022. P. 443–480. DOI: 10.1086/719697.</span></li>
+            <li typeof="schema:ScholarlyArticle"><span property="schema:name">Filocamo A. Circolazione monetale e produzionedi vino. Aspetti dell'economia del Bruzio in età tardoantica. Rivista italiana di numismatica e scienze affini 107, 2006. P. 81-111.</span></li>
+            <li typeof="schema:ScholarlyArticle"><span property="schema:name">Lewit T. Oil and Wine Press Technology in its Economic Context: Screw Presses, the Rural Economy and Trade in Late Antiquity. Antiquité Tardive 20, 2012.</span></li>
+            <li typeof="schema:ScholarlyArticle"><span property="schema:name">Pecci A., Cau Ontiveros M.Á., Garnier N. Identifying Wine and Oil Production: Analysis of Residues from Roman and Late Antique Plastered Vats. JAS 40, 2013. P. 4491–498.</span></li>
+            <li typeof="schema:ScholarlyArticle"><span property="schema:name">Rossiter J. Wine-Making after Pliny: Viticulture and Farming Technology in Late Antique Italy. In Lavan, L., E. Zanini, and A. Sarantis (Eds.). Technology in Transition: A.D. 300–650. Late Antique Archaeology 4. Boston: Brill, 2008. P. 93-118.</span></li>
+        </ul>
     </section>
     
     <footer>
@@ -71,3 +83,4 @@
     </footer>
 </body>
 </html>
+
